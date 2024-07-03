@@ -1,7 +1,7 @@
 import { AxiosResponse } from "axios";
 import {  getAsync } from "./client";
 
-class contactService {
+class ContactService {
 
   get = async (id: any): Promise<AxiosResponse> => {
     return await getAsync(`/contact`)
@@ -9,4 +9,6 @@ class contactService {
   
 }
 
-export default new contactService();
+const contactService = new ContactService(); 
+
+export default contactService; 

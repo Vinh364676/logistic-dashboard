@@ -1,7 +1,7 @@
 import { AxiosResponse } from "axios";
 import { deleteAsync, getAsync, postAsync } from "./client";
 
-class productService {
+class ProductService {
   get = async (params: any): Promise<AxiosResponse> => {
     try {
       const response = await getAsync('/product', {
@@ -25,4 +25,6 @@ class productService {
   }
 }
 
-export default new productService();
+const productService = new ProductService(); 
+
+export default productService; 

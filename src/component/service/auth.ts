@@ -4,7 +4,8 @@ import { postAsync } from "./client";
 class AuthService {
     login = async (loginData: { username: string, password: string }): Promise<AxiosResponse> => {
         return await postAsync('/account/login', loginData);
-      }
+    }
+
     register = async (registerData: {
         firstName: string;
         lastName: string;
@@ -15,9 +16,11 @@ class AuthService {
         email: string;
         password: string;
         address:string;
-      }): Promise<AxiosResponse> => {
+    }): Promise<AxiosResponse> => {
         return await postAsync('/Account/Register', registerData);
-      };
+    };
 }
 
-export default new AuthService();
+const authService = new AuthService(); 
+
+export default authService; 
