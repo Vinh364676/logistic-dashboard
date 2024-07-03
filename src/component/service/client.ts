@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
 
 // Define the base URL for the API
-const baseUrl = 'http://localhost:8000';
+const baseUrl = 'https://be-logistic.onrender.com';
 
 const getToken = (): string | null => {
   return localStorage.getItem('token');
