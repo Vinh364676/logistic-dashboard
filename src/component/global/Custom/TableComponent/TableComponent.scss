@@ -1,0 +1,45 @@
+.tableComponent{
+    background: #fff;
+    border: var(--border-color);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin-top: 42px;
+    border-radius: 16px;
+}
+
+.dropdownCustom{
+    font-size: 18;
+    &:hover{
+        color:var(--primary-color);
+        font-weight: 600;
+    }
+}
+.table__footer{
+
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__col{
+        display: flex;
+        align-items: center;
+        &__title{
+            padding-right: 15px;
+            font-weight: 400;
+        }
+    }
+    &__select{
+        background-color: #EFF8FF;
+        border-radius: 8px;
+        .ant-select-selection-item{
+           text-align: center;
+           padding-right: 0;
+
+        }
+        .ant-select-dropdown-hidden{
+            width: 80px !important;
+        }
+        
+    }
+}

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
+
+$thu-phap-font: "Great Vibes", cursive;
+
+.signInRight {
+    padding: 0 45px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--title {
+        text-align: center;
+        color: #009ee2;
+        font-family: $thu-phap-font;
+        margin-bottom: 0;
+        font-size: 74px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 48px;
+    }
+    &--desc {
+        text-align: center;
+        margin: 16px 0 40px 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+.formItem{
+    padding-bottom: 10px;
+}
+.form-field{
+    position: relative;
+ 
+}
+.form-input{
+    width: 100%;
+    height: 46px;
+    transition: .25s ease;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+  
+    &:focus{
+        border:  1px solid #009ee2;
+
+    }
+   
+}
+.form-label{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 20px;
+    pointer-events: none;
+    transition: .25s ease;
+    font-weight: 400 !important;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label{
+    top: 0;
+    padding:0 2px;
+    display: inline-block;
+    z-index: 999;
+    background-color: #fff;
+    font-weight: 500 !important;
+
+}

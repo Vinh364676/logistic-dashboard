@@ -1,0 +1,38 @@
+.form{
+
+}
+.ant-input-outlined{
+    height: 46px;
+    padding-left: 15px;
+   
+}
+.ant-form-item{
+    label{
+        color: #000009;
+        font-weight: 500;
+    }
+}   
+
+.ant-modal-footer{
+    text-align: center !important;
+}
+
+.ant-dropdown-menu{
+    padding: 16px !important;
+}
+
+
+
+.ant-table-thead >tr>th{
+  
+    background-color: #F8FAFC !important;
+ 
+}
+.ant-table-wrapper .ant-table-container table>thead>tr:first-child >*:first-child{
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+}
+.ant-table-wrapper .ant-table-container table>thead>tr:first-child >*:last-child {
+    border-start-end-radius: 10px;
+    border-end-end-radius: 10px;
+}

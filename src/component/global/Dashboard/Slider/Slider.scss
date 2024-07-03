@@ -1,0 +1,70 @@
+.sliderApp{
+    padding: 0px 20px 12px 20px;
+   border: none !important;
+    .ant-menu-item{
+        margin: 10px 4px;
+    }
+    .ant-menu-item-selected{
+        font-weight: 600;
+    }
+    .ant-menu-item-icon{
+      svg{
+  
+        font-size: 18px;
+      }
+    }
+   .ant-menu-item-icon +span,
+    .ant-menu-title-content{
+      margin-left:14px !important;
+      font-size: 15px;
+      font-weight: 400;
+      
+    }
+}
+.menuitemSub {
+    &::before {
+      content: "";
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.5px; 
+      height: 4.5px; 
+      border-radius: 50%; 
+      background-color: #000; 
+      margin: auto 0;
+      margin-right: 8px; 
+    }
+    &:active::before,
+    &:focus::before {
+        width: 7px; 
+        height: 7px; 
+      background-color: #1677ff; 
+    }
+  }
+.subView{
+ span{
+
+    font-weight: 500;
+  
+  }
+}
+
+.menuProfile{
+  padding: 12px;
+  .ant-menu-item{
+    margin: 12px 0;
+  }
+  .ant-menu-item-icon{
+    svg{
+
+      font-size: 18px;
+    }
+  }
+ .ant-menu-item-icon +span,
+  .ant-menu-title-content{
+    margin-left:18px !important;
+    font-size: 17px;
+    font-weight: 400;
+    
+  }
+}
